@@ -54,7 +54,7 @@ new Vue({
         <div class="bg-gray-100 p-10">
             <div class="grid-cols-5 flex md:flex-row flex-col mb-10">
                 <!-- Format / edition -->
-                <div class="basis-2/5 border shadow-xl p-5 m-2">
+                <div class="basis-2/5 border shadow-xl p-5 m-2 w-full">
                     <h1 class="text-center text-xl text-white bg-blue-800 p-3 mb-5 w-full">Format/Edition</h1>
                     <div class="p-5 float-left">
                         <img src="../asset/sticker.jpg" class="w-full"/>
@@ -80,7 +80,7 @@ new Vue({
                 </div>
 
                 <!-- Data -->
-                <div class="basis-1/5  border shadow-xl p-5 m-2">
+                <div class="basis-1/5  border shadow-xl p-5 m-2 w-2/3">
                     <h1 class="text-center text-xl text-white bg-blue-800 p-3 mb-5 w-full">Data</h1>
                     <p class="text-sm font-bold mb-4">Data supplied</p>
                     <div class="flex items-center mb-4">
@@ -103,7 +103,7 @@ new Vue({
                 </div>
 
                 <!-- Shipment -->
-                <div class="basis-1/5 border shadow-xl p-5 m-2">
+                <div class="basis-1/5 border shadow-xl p-5 m-2 w-2/3">
                     <h1 class="text-center text-xl text-white bg-blue-800 p-3 mb-5 w-full">Shipment</h1>
                     <div>
                         <p class="text-sm font-bold mb-4">Production time</p>
@@ -130,7 +130,7 @@ new Vue({
                 </div>
 
                 <!-- Payment method-->
-                <div class="basis-1/5 border shadow-xl p-5 m-2">
+                <div class="basis-1/5 border shadow-xl p-5 m-2 w-full">
                     <h1 class="text-center text-xl text-white bg-blue-800 p-3 mb-5 w-full">Payment</h1>
                     <div>
                         <p class="text-sm font-bold mb-4">Payment method</p>
