@@ -3,63 +3,61 @@ new Vue({
     template: `
     <div>
         <nav class="flex justify-between bg-gray-900 text-white w-screen sticky top-0">
-        <div class="px-5 xl:px-12 py-6 flex w-full items-center">
-            <a class="text-3xl font-bold font-heading" href="#">
-            <!-- <img class="h-9" src="logo.png" alt="logo"> -->
-            INnUP
-            </a>
-            <!-- Nav Links -->
-            <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
-            <li><a class="hover:text-gray-200" to="/">Home</a></li>
-            <li><a class="hover:text-gray-200" to="/">Products</a></li>
-            <li><a class="hover:text-gray-200" to="/">Contact</a></li>
-            <li><a class="hover:text-gray-200" to="/">About INnUP</a></li>
-            </ul>
-            <!-- Header Icons -->
-            <div class="hidden xl:flex items-center space-x-5">
-            <a class="flex items-center hover:text-gray-200" to="/carts">
+            <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+                <a class="text-3xl font-bold font-heading" href="#">
+                    INnUP
+                </a>
+                <!-- Nav Links -->
+                <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
+                    <li><a class="hover:text-gray-200" to="/">Home</a></li>
+                    <li><a class="hover:text-gray-200" to="/">Products</a></li>
+                    <li><a class="hover:text-gray-200" to="/">Contact</a></li>
+                    <li><a class="hover:text-gray-200" to="/">About INnUP</a></li>
+                </ul>
+                <!-- Header Icons -->
+                <div class="hidden xl:flex items-center space-x-5">
+                <a class="flex items-center hover:text-gray-200" to="/carts">
+                    
+                    <span class="relative inline-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                        <span class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">0</span>
+                    </span>
+                </a>
+                <!-- Sign In / Register      -->
+                <a class="flex items-center hover:text-gray-200" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </a>
                 
-                <span class="relative inline-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                </div>
+            </div>
+            <!-- Responsive navbar -->
+            <a class="xl:hidden flex mr-6 items-center" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
-                    <span class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">0</span>
+                <span class="flex absolute -mt-5 ml-4">
+                    <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500"></span>
                 </span>
             </a>
-            <!-- Sign In / Register      -->
-            <a class="flex items-center hover:text-gray-200" href="#">
+            <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </a>
-            
-            </div>
-        </div>
-        <!-- Responsive navbar -->
-        <a class="xl:hidden flex mr-6 items-center" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
-            <span class="flex absolute -mt-5 ml-4">
-            <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
-            </span>
-            </span>
-        </a>
-        <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </a>
         </nav>
 
         <div class="bg-gray-100 p-10">
             <div class="grid-cols-5 flex md:flex-row flex-col mb-10">
-            <!-- Format / edition -->
+                <!-- Format / edition -->
                 <div class="basis-2/5 border shadow-xl p-5 m-2">
                     <h1 class="text-center text-xl text-white bg-blue-800 p-3 mb-5 w-full">Format/Edition</h1>
                     <div class="p-5 float-left">
-                        <img src="../assets/sticker.jpg" class="w-full"/>
+                        <img src="../asset/sticker.jpg" class="w-full"/>
                     </div>
                     <div class="float-right">
                         <div>
@@ -80,8 +78,390 @@ new Vue({
                         </div>
                     </div>
                 </div>
+
+                <!-- Data -->
+                <div class="basis-1/5  border shadow-xl p-5 m-2">
+                    <h1 class="text-center text-xl text-white bg-blue-800 p-3 mb-5 w-full">Data</h1>
+                    <p class="text-sm font-bold mb-4">Data supplied</p>
+                    <div class="flex items-center mb-4">
+                        <input id="default-radio-1" type="radio" value="pdf/x-la and pdf/x-3" name="data_supplied" @change="onChangeData($event)" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">pdf/x-la and pdf/x-3</label>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <input checked="checked" id="default-radio-2" type="radio" value="Other pdf, ai, eps, jpg" name="data_supplied"  @change="onChangeData($event)" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Other pdf, ai, eps, jpg</label>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <input id="default-radio-3" type="radio" value="doc, docx, ppt, pub, cdr" name="data_supplied" @change="onChangeData($event)" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="default-radio-3" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">doc, docx, pp, pub, cdr</label>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <input id="default-radio-4" type="radio" value="Typesetting & design" name="data_supplied" @change="onChangeData($event)" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="default-radio-4" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Typesetting & design</label>
+                    </div>
+                    <a link="#" class="text-sm">Info about data formats</a>
+                </div>
+
+                <!-- Shipment -->
+                <div class="basis-1/5 border shadow-xl p-5 m-2">
+                    <h1 class="text-center text-xl text-white bg-blue-800 p-3 mb-5 w-full">Shipment</h1>
+                    <div>
+                        <p class="text-sm font-bold mb-4">Production time</p>
+                        <div class="flex items-center mb-4">
+                            <input id="pro_standard" checked="checked" @change="onChangeProduction($event)" type="radio" value="Standard" name="production" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="pro_standard" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Standard</label>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <input id="pro_express" type="radio" value="Express"  @change="onChangeProduction($event)" name="production" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="pro_express" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Express</label>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold mb-4">Delivery country</p>
+                        <div class="flex items-center mb-4">
+                            <input id="delivery_1" type="radio"  value="Germany" name="delivery" @change="onChangeDelivery($event)" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="delivery_1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Germany</label>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <input checked id="delivery_2" type="radio" value="Austria" name="delivery" @change="onChangeDelivery($event)" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="delivery_2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Austria</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment method-->
+                <div class="basis-1/5 border shadow-xl p-5 m-2">
+                    <h1 class="text-center text-xl text-white bg-blue-800 p-3 mb-5 w-full">Payment</h1>
+                    <div>
+                        <p class="text-sm font-bold mb-4">Payment method</p>
+                        <div class="flex items-center mb-4">
+                            <input id="pay_invoice" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="pay_invoice" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">The invoice</label>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <input checked id="pay_half" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="pay_half" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">50% advance payment</label>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <input checked id="pay_advance" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="pay_advance" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Payment in advance</label>
+                        </div>
+                    </div>
+                    <div class="container border border-gray-500 shadow p-2 text-center text-sm">
+                        <p>Online Discount</p>
+                        <p>€5.00 net</p>
+                        <p>€5.95 including VAT</p>
+                    </div>
+                </div>
             </div>
-        <!-- INnUP SUPPORT -->
+            <!-- Results Table-->
+            <div>
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-300 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Print process
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Number
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Dimension[mm]
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Durability colors
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Adhesive Properties
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                surface
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Latest delivery
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Price
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                action
+                            </th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <div class="flex">
+                                    Digital printing
+                                </div>
+                                <div class="flex">
+                                    on white PVC film on fixed sheets
+                                </div>
+                            </th>
+                            <td class="px-6 py-4">
+                                100
+                            </td>
+                            <td class="px-6 py-4">
+                                100 X 100
+                            </td>
+                            <td class="px-6 py-4">
+                                <ol>
+                                    <li class="flex items-center mb-4">
+                                        weatherproof
+                                    </li>
+                                    <li class="flex items-center mb-4">
+                                        4c
+                                    </li>
+                                </ol>
+                            </td>
+                            <td class="px-6 py-4">
+                                <ol>
+                                    <li class="flex items-center mb-4">          
+                                        <input :id="'adhesive' + 'Digital Printing'" type="radio" :name="'adhesive' + 'Digital Printing'" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label :for="'adhesive' +  + 'Digital Printing'" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">removable</label>
+                                    </li>
+                                    <li class="flex items-center mb-4">          
+                                        <input :id="'adhesive' + 'Digital Printing'" type="radio" :name="'adhesive' + 'Digital Printing'" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
+                                        <label :for="'adhesive' +  + 'Digital Printing'" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">adherent</label>
+                                    </li>
+                                </ol>
+                            </td>
+                            <td class="px-6 py-4">
+                                <ol>
+                                    <li class="flex items-center mb-4">          
+                                        <input :id="'surface' + 'Digital Printing'" type="radio" :name="'surface' + 'Digital Printing'" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
+                                        <label :for="'surface' +  + 'Digital Printing'" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">glittering</label>
+                                    </li>
+                                    <li class="flex items-center mb-4">          
+                                        <input :id="'surface' + 'Digital Printing'" type="radio" :name="'surface' + 'Digital Printing'" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label :for="'surface' +  + 'Digital Printing'" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">shiny laminate</label>
+                                    </li>
+                                    <li class="flex items-center mb-4">          
+                                        <input :id="'surface' + 'Digital Printing'" type="radio" :name="'surface' + 'Digital Printing'" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label :for="'surface' +  + 'Digital Printing'" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">matt lami</label>
+                                    </li>
+                                </ol>
+                            </td>
+                            <td class="px-6 py-4">
+                                Arriving Mon 03/03/24
+                            </td>
+                            <td class="px-6 py-4">
+                                €96.76 net
+                                <br>
+                                <strong>€115.14 including VAT</strong>
+                            </td>
+                            <td class="px-6 py-4">
+                                <button class="px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">
+                                    Add to cart
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <div class="flex">
+                                    screen printing
+                                </div>
+                                <div class="flex">
+                                    on white pVC film cut individually
+                                </div>
+                            </th>
+                            <td class="px-6 py-4">
+                                100
+                            </td>
+                            <td class="px-6 py-4">
+                                100 X 100
+                            </td>
+                            <td class="px-6 py-4">
+                                <ol>
+                                    <li class="flex items-center mb-4">
+                                        weatherproof
+                                    </li>
+                                    <li class="flex items-center mb-4">
+                                        indoors
+                                    </li>
+                                </ol>
+                            </td>
+                            <td class="px-6 py-4">
+                                <ol>
+                                    <li class="flex items-center mb-4">          
+                                        <input :id="'adhesive' + 'screenPrinting'" type="radio" :name="'adhesive' + 'screenPrinting'" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label :for="'adhesive' +  + 'screenPrinting'" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">removable</label>
+                                    </li>
+                                    <li class="flex items-center mb-4">          
+                                        <input :id="'adhesive' + 'screenPrinting'" type="radio" :name="'adhesive' + 'screenPrinting'" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
+                                        <label :for="'adhesive' +  + 'screenPrinting'" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">adherent</label>
+                                    </li>
+                                    <li class="flex items-center mb-4">          
+                                        <input :id="'adhesive' + 'screenPrinting'" type="radio" :name="'adhesive' + 'screenPrinting'" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label :for="'adhesive' +  + 'screenPrinting'" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">extremely adhesive</label>
+                                    </li>
+                                </ol>
+                            </td>
+                            <td class="px-6 py-4">
+                                <ol>
+                                    <li class="flex items-center mb-4">
+                                        <label :for="'surface' +  + 'Digital Printing'" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">glittering</label>
+                                    </li>
+                                </ol>
+                            </td>
+                            <td class="px-6 py-4">
+                                Arriving Mon 03/13/24
+                            </td>
+                            <td class="px-6 py-4">
+                                €412.30 net
+                                <br>
+                                <strong>€490.64 including VAT</strong>
+                            </td>
+                            <td class="px-6 py-4">
+                                <button class="px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">
+                                    Add to cart
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <div class="flex">
+                                    UV offset printing
+                                </div>
+                                <div class="flex">
+                                    on white PVC film delivered individually
+                                </div>
+                            </th>
+                            <td class="px-6 py-4">
+                                250
+                            </td>
+                            <td class="px-6 py-4">
+                                100 X 100
+                            </td>
+                            <td class="px-6 py-4">
+                                <ol>
+                                    <li class="flex items-center mb-4">
+                                        weatherproof
+                                    </li>
+                                    <li class="flex items-center mb-4">
+                                        4c
+                                    </li>
+                                </ol>
+                            </td>
+                            <td class="px-6 py-4">
+                                <ol>
+                                    <li class="flex items-center mb-4">          
+                                        <input :id="'adhesive' + 'uvoffsetprinting'" type="radio" :name="'adhesive' + 'uvoffsetprinting'" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label :for="'adhesive' +  + 'uvoffsetprinting'" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">removable</label>
+                                    </li>
+                                    <li class="flex items-center mb-4">          
+                                        <input :id="'adhesive' + 'uvoffsetprinting'" type="radio" :name="'adhesive' + 'uvoffsetprinting'" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
+                                        <label :for="'adhesive' +  + 'uvoffsetprinting'" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">adherent</label>
+                                    </li>
+                                </ol>
+                            </td>
+                            <td class="px-6 py-4">
+                                <ol>
+                                    <li class="flex items-center mb-4">          
+                                        <input :id="'surface' + 'uvoffsetprinting'" type="radio" :name="'surface' + 'uvoffsetprinting'" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
+                                        <label :for="'surface' +  + 'uvoffsetprinting'" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">glittering</label>
+                                    </li>
+                                    <li class="flex items-center mb-4">          
+                                        <input :id="'surface' + 'uvoffsetprinting'" type="radio" :name="'surface' + 'uvoffsetprinting'" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label :for="'surface' +  + 'uvoffsetprinting'" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">frosted</label>
+                                    </li>
+                                </ol>
+                            </td>
+                            <td class="px-6 py-4">
+                                Arriving Mon 03/12/24
+                            </td>
+                            <td class="px-6 py-4">
+                                €170.80 net
+                                <br>
+                                <strong>€203.25 including VAT</strong>
+                            </td>
+                            <td class="px-6 py-4">
+                                <button class="px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">
+                                    Add to cart
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <div class="flex">
+                                    Adhesive paper offset printing
+                                </div>
+                                <div class="flex">
+                                    delivered individually
+                                </div>
+                            </th>
+                            <td class="px-6 py-4">
+                                100
+                            </td>
+                            <td class="px-6 py-4">
+                                100 X 100
+                            </td>
+                            <td class="px-6 py-4">
+                                <ol>
+                                    <li class="flex items-center mb-4">
+                                        weatherproof
+                                    </li>
+                                    <li class="flex items-center mb-4">
+                                        <select>
+                                            <option>0/0</option>
+                                            <option>1/0</option>
+                                            <option>2/0</option>
+                                            <option>3/0</option>
+                                            <option>4/0</option>
+                                            <option>5/0</option>
+                                            <option>6/0</option>
+                                        </select>
+                                    </li>
+                                    <li class="flex items-center mb-4">
+                                        <select>
+                                            <option>without special colors</option>
+                                            <option>+ silver</option>
+                                            <option>+ gold</option>
+                                            <option>+ silver + gold</option>
+                                        </select>
+                                    </li>
+                                </ol>
+                            </td>
+                            <td class="px-6 py-4">
+                                <ol>
+                                    <li class="flex items-center mb-4">         
+                                        <label :for="'adhesive' +  + 'adhesivepaperoffsetprinting'" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">adherent</label>
+                                    </li>
+                                </ol>
+                            </td>
+                            <td class="px-6 py-4">
+                                <ol>
+                                    <li class="flex items-center mb-4">          
+                                        <input :id="'surface' + 'adhesivepaperoffsetprinting'" type="radio" :name="'surface' + 'adhesivepaperoffsetprinting'" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
+                                        <label :for="'surface' +  + 'adhesivepaperoffsetprinting'" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">glittering</label>
+                                    </li>
+                                    <li class="flex items-center mb-4">          
+                                        <input :id="'surface' + 'adhesivepaperoffsetprinting'" type="radio" :name="'surface' + 'adhesivepaperoffsetprinting'" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label :for="'surface' +  + 'adhesivepaperoffsetprinting'" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">describe</label>
+                                    </li>
+                                </ol>
+                            </td>
+                            <td class="px-6 py-4">
+                                Arriving Mon 03/03/24
+                            </td>
+                            <td class="px-6 py-4">
+                                €105.00 net
+                                <br>
+                                <strong>€124.95 including VAT</strong>
+                            </td>
+                            <td class="px-6 py-4">
+                                <button class="px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">
+                                    Add to cart
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
+    <!-- INnUP SUPPORT -->
+
             <div class="bg-gray-100 p-5">
                 <div class="container my-12 mx-auto px-2 md:px-4 w-1/2">
                     <section>
